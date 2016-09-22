@@ -1,2 +1,0 @@
-https://en.wikipedia.org/wiki/Currying
-https://en.wikipedia.org/wiki/Lambda_calculus
