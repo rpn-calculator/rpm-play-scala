@@ -1,4 +1,4 @@
-name := """play-scala-intro"""
+name := """rpn-play-scala"""
 
 version := "1.0-SNAPSHOT"
 
@@ -12,4 +12,3 @@ libraryDependencies ++= Seq(
   ws,
   "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test
 )
-
