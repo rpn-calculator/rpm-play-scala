@@ -4,6 +4,7 @@ import javax.inject._
 import play.api._
 import play.api.libs.json._
 import play.api.mvc._
+import library.{RPN, Base64, ShuntingYard}
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -22,25 +23,24 @@ class HomeController @Inject() extends Controller {
     Ok(views.html.index("App is Ready !!"))
   }
 
-  def calc() = {
-    540;
-  }
+  def calcResult(query: String) = Action {
 
-  def calcResult = Action { implicit request =>
+    try {
+        val InFix = Base64.decodeString(query)
+        val PostFix = ShuntingYard.shunt(InFix)
+        val RpnValue = RPN.calculate(PostFix)
 
-    val calcResult = 450
+        Ok(JsObject(Seq(
+          "error" -> JsBoolean(false),
+          "result" -> JsNumber(RpnValue)
+        )))
+    } catch {
+        case e @ (_ : RuntimeException | _ : java.io.IOException) => Ok(JsObject(Seq(
+          "error" -> JsBoolean(true),
+          "message" -> JsString("Error: " + e)
+        )))
+    }
 
-    val json: JsValue = JsObject(Seq(
-      "error" -> JsBoolean(false),
-      "result" -> JsNumber(calc()),
-      "message" -> JsString(null)
-    ))
-
-    /* Removing Message Property */
-    val successResult = json.as[JsObject] - "message"
-    val errorResult = json.as[JsObject] - "result"
-
-    Ok(successResult)
   }
 
 }
