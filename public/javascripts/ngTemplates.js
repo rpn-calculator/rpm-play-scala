@@ -3,16 +3,22 @@ angular.module('osprey').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('app/js/lookUp/lookUp.html',
     "<nav-bar></nav-bar>\n" +
-    "<banner></banner>\n" +
+    "<banner expression=\"inFix\" result=\"result\"></banner>\n" +
     "\n" +
     "<div class=\"container\">\n" +
     "    <form>\n" +
     "        <div class=\"row\">\n" +
     "            <div class=\"col-md-6 col-lg-6\">\n" +
     "\n" +
-    "                <input-box></input-box>\n" +
+    "                <div class=\"form-group\">\n" +
+    "                    <label for=\"inFix\">Mathmatical Expression</label>\n" +
+    "                    <input type=\"text\" ng-model=\"inFix\" class=\"form-control input-lg\" id=\"inFix\" aria-describedby=\"inFixHelp\" placeholder=\"Enter Expression\">\n" +
+    "                    <small id=\"inFixHelp\" class=\"form-text text-muted\">Please enter mathematical expression.</small>\n" +
+    "                </div>\n" +
     "\n" +
-    "                <submit-button></submit-button>\n" +
+    "                <div class=\"pull-right\">\n" +
+    "                    <button type=\"submit\" ng-click=\"onCalculate()\" class=\"btn btn-lg btn-primary\">Calculate</button>\n" +
+    "                </div>\n" +
     "\n" +
     "            </div>\n" +
     "        </div>\n" +
@@ -23,8 +29,14 @@ angular.module('osprey').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('app/js/shared/ngComponents/common/banner.html',
     "<div class=\"jumbotron text-center\">\n" +
-    "  <h1>Osprey</h1>\n" +
-    "  <p>Account Look Up</p>\n" +
+    "  <h1>RPN Calc</h1>\n" +
+    "  <p>Reverse Polish Notation</p>\n" +
+    "  <p class=\"expression\">\n" +
+    "      Expression: <mark>{{$ctrl.expression || \"Enter Expression\"}}</mark>\n" +
+    "  </p>\n" +
+    "  <p class=\"expression\">\n" +
+    "      Result: <mark>{{$ctrl.result || \"Result\"}}</mark>\n" +
+    "  </p>\n" +
     "</div>\n"
   );
 
@@ -32,43 +44,21 @@ angular.module('osprey').run(['$templateCache', function($templateCache) {
   $templateCache.put('app/js/shared/ngComponents/common/navBar.html',
     "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\n" +
     "    <div class=\"container\">\n" +
-    "        <a class=\"navbar-brand\" href=\"#\">Osprey</a>\n" +
+    "        <a class=\"navbar-brand\" href=\"#\">RPN Calculator</a>\n" +
     "\n" +
     "        <ul class=\"nav navbar-nav\">\n" +
     "            <li class=\"nav-item active\">\n" +
     "                <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"#\">Loan History</a>\n" +
+    "                <a class=\"nav-link\" target=\"_blank\" href=\"/calculus?query=MiAqICgyMy8oMyozKSktIDIzICogKDIqMyk=\">2 * (23/(3*3))- 23 * (2*3)</a>\n" +
     "            </li>\n" +
     "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"#\">Loan Activity</a>\n" +
-    "            </li>\n" +
-    "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"#\">App Query</a>\n" +
-    "            </li>\n" +
-    "            <li class=\"nav-item\">\n" +
-    "                <a class=\"nav-link\" href=\"#\">Download Contract</a>\n" +
+    "                <a class=\"nav-link\" target=\"_blank\" href=\"/calculus?query=a+b\" href=\"#\">a+b</a>\n" +
     "            </li>\n" +
     "        </ul>\n" +
     "    </div>\n" +
     "</nav>\n"
-  );
-
-
-  $templateCache.put('app/js/shared/ngComponents/form/inputBox.html',
-    "<div class=\"form-group\">\n" +
-    "    <label for=\"accountNumber\">Account Number</label>\n" +
-    "    <input maxlength=\"18\" type=\"email\" class=\"form-control input-lg\" id=\"accountNumber\" aria-describedby=\"accountNumberHelp\" placeholder=\"Enter Account Number\">\n" +
-    "    <small id=\"accountNumberHelp\" class=\"form-text text-muted\">Please enter 10 digits number.</small>\n" +
-    "</div>\n"
-  );
-
-
-  $templateCache.put('app/js/shared/ngComponents/form/submitButton.html',
-    "<div class=\"pull-right\">\n" +
-    "    <button type=\"submit\" class=\"btn btn-lg btn-primary\">Search</button>\n" +
-    "</div>\n"
   );
 
 }]);

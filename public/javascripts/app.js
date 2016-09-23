@@ -1,9 +1,10 @@
 angular.module('components', []);
 
-angular.module('lookUp', []);
+angular.module('lookUp', ['base64']);
 
 angular.module('osprey', [
     'ngRoute',
+    'base64',
     'components',
     'lookUp'
 ])

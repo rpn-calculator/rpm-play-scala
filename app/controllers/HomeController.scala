@@ -35,7 +35,7 @@ class HomeController @Inject() extends Controller {
           "result" -> JsNumber(RpnValue)
         )))
     } catch {
-        case e @ (_ : RuntimeException | _ : java.io.IOException) => Ok(JsObject(Seq(
+        case e @ (_ : RuntimeException | _ : java.io.IOException) => BadRequest(JsObject(Seq(
           "error" -> JsBoolean(true),
           "message" -> JsString("Error: " + e)
         )))

@@ -1,14 +1,20 @@
 <nav-bar></nav-bar>
-<banner></banner>
+<banner expression="inFix" result="result"></banner>
 
 <div class="container">
     <form>
         <div class="row">
             <div class="col-md-6 col-lg-6">
 
-                <input-box></input-box>
+                <div class="form-group">
+                    <label for="inFix">Mathmatical Expression</label>
+                    <input type="text" ng-model="inFix" class="form-control input-lg" id="inFix" aria-describedby="inFixHelp" placeholder="Enter Expression">
+                    <small id="inFixHelp" class="form-text text-muted">Please enter mathematical expression.</small>
+                </div>
 
-                <submit-button></submit-button>
+                <div class="pull-right">
+                    <button type="submit" ng-click="onCalculate()" class="btn btn-lg btn-primary">Calculate</button>
+                </div>
 
             </div>
         </div>
