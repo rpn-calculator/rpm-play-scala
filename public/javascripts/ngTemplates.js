@@ -11,7 +11,7 @@ angular.module('osprey').run(['$templateCache', function($templateCache) {
     "            <div class=\"col-md-6 col-lg-6\">\n" +
     "\n" +
     "                <div class=\"form-group\">\n" +
-    "                    <label for=\"inFix\">Mathmatical Expression</label>\n" +
+    "                    <label for=\"inFix\">Mathmatical Expression: </label>\n" +
     "                    <input type=\"text\" ng-model=\"inFix\" class=\"form-control input-lg\" id=\"inFix\" aria-describedby=\"inFixHelp\" placeholder=\"Enter Expression\">\n" +
     "                    <small id=\"inFixHelp\" class=\"form-text text-muted\">Please enter mathematical expression.</small>\n" +
     "                </div>\n" +

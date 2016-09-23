@@ -1,49 +1,72 @@
-This is your new Play application
-=================================
+## RPN Calculation in Play Scala
 
-This file will be packaged with your application when using `activator dist`.
+This Project helps to calculate your mathematical expression in RPN using Typesafe Stack, Play, Scala, NodeJS, Grunt, Angular, Bootstrap and jQuery.
 
-There are several demonstration files available in this template.
+### What is RPN ?
+1. RPN Stands for Reverse Polish Notation which is mathematical notation.
+2. The notation has the advantage that it no longer uses parentheses, reducing errors, and is sometimes faster than a normal calculation.
+3. Refer for more information [Wikipedia](https://en.wikipedia.org/wiki/Reverse_Polish_notation)!
+
+### What is Shunting Yard?
+1. Its an Algorithm and It can be used to produce either a postfix notation string, also known as Reverse Polish notation (RPN), or an abstract syntax tree (AST).
+2. It will helps to convert mathematical expression to RPN.
+3. Refer for more information [Wikipedia](https://en.wikipedia.org/wiki/Shunting-yard_algorithm)
+
+### How to run app the locally?
+1. If you have `sbt`, `Typesafe` and `scala`. you can do `activator run`
+
+### How to setup front-end locally?
+Follow below steps to setup locally and make sure in root where package.json and bower.json is exist.
+
+```
+$ export PATH="/usr/local/bin:$PATH"
+$ brew install node
+$ npm install
+$ bower install
+$ grunt build
+$ activator run
+```
+
+### How to setup locally?
+1. homebrew - run `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+1. scala - run `brew install scala`
+2. sbt - run `brew install sbt`
+
+### How to test Scala?
+Check the below commands.
+```
+$ vi .profile
+$ export PATH="/Users/<userId>/scala/bin:$PATH"
+$ source .profile
+$ scala
+ println("Hello Scala");
+```
+
+### What are the changes in Scala?
+This project server side code written in Scala using Play Scala Framework. Below is change log.
 
 Controllers
 ===========
 
 - HomeController.scala:
 
-  Shows how to handle simple HTTP requests.
+  Shows Form to Input Mathmatical Expression.
+  Routes to Calculus Method to RPN Expression calculation.
 
-- AsyncController.scala:
-
-  Shows how to do asynchronous programming when handling a request.
-
-- CountController.scala:
-
-  Shows how to inject a component into a controller and use the component when
-  handling requests.
-
-Components
+lib
 ==========
 
-- Module.scala:
+- Base64.scala:
 
-  Shows how to use Guice to bind all the components needed by your application.
+  This Library helps to encode / decode in Base64 Format.
 
-- Counter.scala:
+- ShuntingYard.scala:
 
-  An example of a component that contains state, in this case a simple counter.
+  This Library helps to convert Mathmatical Expression to RPN using ShuntingYard Algorithm.
 
-- ApplicationTimer.scala:
+- RPN.scala:
 
-  An example of a component that starts when the application starts and stops
-  when the application stops.
+  This evaluates the RPN Expression to calculated.
 
-Filters
-=======
-
-- Filters.scala:
-
-  Creates the list of HTTP filters used by your application.
-
-- ExampleFilter.scala
-
-  A simple filter that adds a header to every response.
+### What about Front-end Implementation?
+In Front-end, AngularJS, NodeJS, Bootstrap, jQuery, Bower are used.

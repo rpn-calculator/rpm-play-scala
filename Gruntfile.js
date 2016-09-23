@@ -4,8 +4,8 @@ module.exports = function (grunt) {
         ngtemplates:  {
             osprey: {
                 cwd: '',
-                src: 'app/js/**/*.html',
-                dest: './app/js/ngTemplates.js'
+                src: 'public/javascripts/**/*.html',
+                dest: './public/javascripts/ngTemplates.js'
             }
         }
     });

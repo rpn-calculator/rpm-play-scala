@@ -1,0 +1,292 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/vramamoorthy/.nvm/versions/node/v5.10.1/bin/node',
+1 verbose cli   '/Users/vramamoorthy/.nvm/versions/node/v5.10.1/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@3.8.8
+3 info using node@v5.10.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData grunt
+20 silly mapToRegistry name grunt
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://npm.paypal.com/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'grunt',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   name: 'grunt',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://npm.paypal.com/grunt
+25 silly fetchNamedPackageData grunt-angular-templates
+26 silly mapToRegistry name grunt-angular-templates
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://npm.paypal.com/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'grunt-angular-templates',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   name: 'grunt-angular-templates',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://npm.paypal.com/grunt-angular-templates
+31 silly fetchNamedPackageData grunt-cli
+32 silly mapToRegistry name grunt-cli
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://npm.paypal.com/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'grunt-cli',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   name: 'grunt-cli',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://npm.paypal.com/grunt-cli
+37 verbose request uri https://npm.paypal.com/grunt-angular-templates
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 12:39:58 PM
+40 verbose request id e9d20373c03c06ba
+41 verbose etag "1WHV4AO5KQ67QTTWV6F7P9U0S"
+42 http request GET https://npm.paypal.com/grunt-angular-templates
+43 verbose request uri https://npm.paypal.com/grunt-cli
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 12:39:58 PM
+46 verbose etag "ABE8SB1ZFYHVX64Z7EP8RJR0"
+47 http request GET https://npm.paypal.com/grunt-cli
+48 verbose request uri https://npm.paypal.com/grunt
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 12:39:58 PM
+51 verbose etag "BAGWDXG12DQJ1ENK0NNMQBNWG"
+52 http request GET https://npm.paypal.com/grunt
+53 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:443
+54 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:443
+55 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:443
+56 info attempt registry request try #2 at 12:40:09 PM
+57 verbose etag "ABE8SB1ZFYHVX64Z7EP8RJR0"
+58 http request GET https://npm.paypal.com/grunt-cli
+59 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:443
+60 info attempt registry request try #2 at 12:40:09 PM
+61 verbose etag "1WHV4AO5KQ67QTTWV6F7P9U0S"
+62 http request GET https://npm.paypal.com/grunt-angular-templates
+63 info attempt registry request try #2 at 12:40:09 PM
+64 verbose etag "BAGWDXG12DQJ1ENK0NNMQBNWG"
+65 http request GET https://npm.paypal.com/grunt
+66 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:443
+67 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:443
+68 info attempt registry request try #3 at 12:41:09 PM
+69 verbose etag "ABE8SB1ZFYHVX64Z7EP8RJR0"
+70 http request GET https://npm.paypal.com/grunt-cli
+71 info attempt registry request try #3 at 12:41:09 PM
+72 verbose etag "1WHV4AO5KQ67QTTWV6F7P9U0S"
+73 http request GET https://npm.paypal.com/grunt-angular-templates
+74 info attempt registry request try #3 at 12:41:09 PM
+75 verbose etag "BAGWDXG12DQJ1ENK0NNMQBNWG"
+76 http request GET https://npm.paypal.com/grunt
+77 silly get cb [ 304, undefined ]
+78 verbose etag https://npm.paypal.com/grunt from cache
+79 verbose get saving grunt to /Users/vramamoorthy/.npm/npm.paypal.com/grunt/.cache.json
+80 verbose correctMkdir /Users/vramamoorthy/.npm correctMkdir not in flight; initializing
+81 silly get cb [ 304, undefined ]
+82 verbose etag https://npm.paypal.com/grunt-angular-templates from cache
+83 verbose get saving grunt-angular-templates to /Users/vramamoorthy/.npm/npm.paypal.com/grunt-angular-templates/.cache.json
+84 verbose correctMkdir /Users/vramamoorthy/.npm correctMkdir already in flight; waiting
+85 silly get cb [ 304, undefined ]
+86 verbose etag https://npm.paypal.com/grunt-cli from cache
+87 verbose get saving grunt-cli to /Users/vramamoorthy/.npm/npm.paypal.com/grunt-cli/.cache.json
+88 verbose correctMkdir /Users/vramamoorthy/.npm correctMkdir already in flight; waiting
+89 silly fetchPackageMetaData Error: No compatible version found: grunt-angular-templates@^1.1.0
+89 silly fetchPackageMetaData Valid install targets:
+89 silly fetchPackageMetaData 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0, 0.6.0, 0.5.9, 0.5.8, 0.5.7, 0.5.6, 0.5.5, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.10, 0.4.9, 0.4.7, 0.4.6, 0.4.5, 0.4.4, 0.4.3, 0.4.2, 0.4.1, 0.4.0, 0.3.12, 0.3.11, 0.3.10, 0.3.9, 0.3.8, 0.3.7, 0.3.6, 0.3.4, 0.3.3, 0.3.2, 0.3.1, 0.3.0, 0.2.2, 0.2.1, 0.1.3, 0.1.2, 0.1.1, 0.1.0
+89 silly fetchPackageMetaData
+89 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/Users/vramamoorthy/.nvm/versions/node/v5.10.1/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+89 silly fetchPackageMetaData     at /Users/vramamoorthy/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+89 silly fetchPackageMetaData     at /Users/vramamoorthy/.nvm/versions/node/v5.10.1/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+89 silly fetchPackageMetaData     at saved (/Users/vramamoorthy/.nvm/versions/node/v5.10.1/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+89 silly fetchPackageMetaData     at /Users/vramamoorthy/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+89 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+89 silly fetchPackageMetaData  error for grunt-angular-templates@^1.1.0 [Error: No compatible version found: grunt-angular-templates@^1.1.0
+89 silly fetchPackageMetaData Valid install targets:
+89 silly fetchPackageMetaData 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0, 0.6.0, 0.5.9, 0.5.8, 0.5.7, 0.5.6, 0.5.5, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.10, 0.4.9, 0.4.7, 0.4.6, 0.4.5, 0.4.4, 0.4.3, 0.4.2, 0.4.1, 0.4.0, 0.3.12, 0.3.11, 0.3.10, 0.3.9, 0.3.8, 0.3.7, 0.3.6, 0.3.4, 0.3.3, 0.3.2, 0.3.1, 0.3.0, 0.2.2, 0.2.1, 0.1.3, 0.1.2, 0.1.1, 0.1.0
+89 silly fetchPackageMetaData ]
+90 silly resolveWithNewModule grunt-cli@1.2.0 checking installable status
+91 silly cache add args [ 'grunt-cli@^1.2.0', null ]
+92 verbose cache add spec grunt-cli@^1.2.0
+93 silly cache add parsed spec Result {
+93 silly cache add   raw: 'grunt-cli@^1.2.0',
+93 silly cache add   scope: null,
+93 silly cache add   name: 'grunt-cli',
+93 silly cache add   rawSpec: '^1.2.0',
+93 silly cache add   spec: '>=1.2.0 <2.0.0',
+93 silly cache add   type: 'range' }
+94 silly addNamed grunt-cli@>=1.2.0 <2.0.0
+95 verbose addNamed ">=1.2.0 <2.0.0" is a valid semver range for grunt-cli
+96 silly addNameRange { name: 'grunt-cli', range: '>=1.2.0 <2.0.0', hasData: false }
+97 silly mapToRegistry name grunt-cli
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://npm.paypal.com/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: 'grunt-cli',
+100 silly mapToRegistry   scope: null,
+100 silly mapToRegistry   name: 'grunt-cli',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag' }
+101 silly mapToRegistry uri https://npm.paypal.com/grunt-cli
+102 verbose addNameRange registry:https://npm.paypal.com/grunt-cli not in flight; fetching
+103 silly resolveWithNewModule grunt@1.0.1 checking installable status
+104 silly cache add args [ 'grunt@^1.0.1', null ]
+105 verbose cache add spec grunt@^1.0.1
+106 silly cache add parsed spec Result {
+106 silly cache add   raw: 'grunt@^1.0.1',
+106 silly cache add   scope: null,
+106 silly cache add   name: 'grunt',
+106 silly cache add   rawSpec: '^1.0.1',
+106 silly cache add   spec: '>=1.0.1 <2.0.0',
+106 silly cache add   type: 'range' }
+107 silly addNamed grunt@>=1.0.1 <2.0.0
+108 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for grunt
+109 silly addNameRange { name: 'grunt', range: '>=1.0.1 <2.0.0', hasData: false }
+110 silly mapToRegistry name grunt
+111 silly mapToRegistry using default registry
+112 silly mapToRegistry registry https://npm.paypal.com/
+113 silly mapToRegistry data Result {
+113 silly mapToRegistry   raw: 'grunt',
+113 silly mapToRegistry   scope: null,
+113 silly mapToRegistry   name: 'grunt',
+113 silly mapToRegistry   rawSpec: '',
+113 silly mapToRegistry   spec: 'latest',
+113 silly mapToRegistry   type: 'tag' }
+114 silly mapToRegistry uri https://npm.paypal.com/grunt
+115 verbose addNameRange registry:https://npm.paypal.com/grunt not in flight; fetching
+116 verbose get https://npm.paypal.com/grunt-cli not expired, no request
+117 silly addNameRange number 2 { name: 'grunt-cli', range: '>=1.2.0 <2.0.0', hasData: true }
+118 silly addNameRange versions [ 'grunt-cli',
+118 silly addNameRange   [ '0.1.0',
+118 silly addNameRange     '0.1.1',
+118 silly addNameRange     '0.1.2',
+118 silly addNameRange     '0.1.3',
+118 silly addNameRange     '0.1.4',
+118 silly addNameRange     '0.1.5',
+118 silly addNameRange     '0.1.6',
+118 silly addNameRange     '0.1.7',
+118 silly addNameRange     '0.1.8',
+118 silly addNameRange     '0.1.9',
+118 silly addNameRange     '0.1.10',
+118 silly addNameRange     '0.1.11',
+118 silly addNameRange     '0.1.12',
+118 silly addNameRange     '0.1.13',
+118 silly addNameRange     '1.0.0-rc1',
+118 silly addNameRange     '1.0.0',
+118 silly addNameRange     '1.0.1',
+118 silly addNameRange     '1.1.0',
+118 silly addNameRange     '1.2.0' ] ]
+119 silly addNamed grunt-cli@1.2.0
+120 verbose addNamed "1.2.0" is a plain semver version for grunt-cli
+121 verbose get https://npm.paypal.com/grunt not expired, no request
+122 silly addNameRange number 2 { name: 'grunt', range: '>=1.0.1 <2.0.0', hasData: true }
+123 silly addNameRange versions [ 'grunt',
+123 silly addNameRange   [ '0.1.0',
+123 silly addNameRange     '0.1.1',
+123 silly addNameRange     '0.1.2',
+123 silly addNameRange     '0.2.0',
+123 silly addNameRange     '0.2.1',
+123 silly addNameRange     '0.2.2',
+123 silly addNameRange     '0.2.3',
+123 silly addNameRange     '0.2.4',
+123 silly addNameRange     '0.2.5',
+123 silly addNameRange     '0.2.6',
+123 silly addNameRange     '0.2.7',
+123 silly addNameRange     '0.2.8',
+123 silly addNameRange     '0.2.9',
+123 silly addNameRange     '0.2.10',
+123 silly addNameRange     '0.2.11',
+123 silly addNameRange     '0.2.12',
+123 silly addNameRange     '0.2.13',
+123 silly addNameRange     '0.2.14',
+123 silly addNameRange     '0.2.15',
+123 silly addNameRange     '0.3.0',
+123 silly addNameRange     '0.3.1',
+123 silly addNameRange     '0.3.2',
+123 silly addNameRange     '0.3.3',
+123 silly addNameRange     '0.3.4',
+123 silly addNameRange     '0.3.5',
+123 silly addNameRange     '0.3.6',
+123 silly addNameRange     '0.3.7',
+123 silly addNameRange     '0.3.8',
+123 silly addNameRange     '0.3.9',
+123 silly addNameRange     '0.3.10',
+123 silly addNameRange     '0.3.11',
+123 silly addNameRange     '0.3.12',
+123 silly addNameRange     '0.3.13',
+123 silly addNameRange     '0.3.14',
+123 silly addNameRange     '0.3.15',
+123 silly addNameRange     '0.3.16',
+123 silly addNameRange     '0.3.17',
+123 silly addNameRange     '0.4.0',
+123 silly addNameRange     '0.4.1',
+123 silly addNameRange     '0.4.2',
+123 silly addNameRange     '0.4.3',
+123 silly addNameRange     '0.4.4',
+123 silly addNameRange     '0.4.5',
+123 silly addNameRange     '1.0.0-rc1',
+123 silly addNameRange     '1.0.0',
+123 silly addNameRange     '1.0.1',
+123 silly addNameRange     '0.3.13-a',
+123 silly addNameRange     '0.4.0-a',
+123 silly addNameRange     '0.4.0-rc1',
+123 silly addNameRange     '0.4.0-rc2',
+123 silly addNameRange     '0.4.0-rc3',
+123 silly addNameRange     '0.4.0-rc4',
+123 silly addNameRange     '0.4.0-rc5',
+123 silly addNameRange     '0.4.0-rc6',
+123 silly addNameRange     '0.4.0-rc7',
+123 silly addNameRange     '0.4.0-rc8' ] ]
+124 silly addNamed grunt@1.0.1
+125 verbose addNamed "1.0.1" is a plain semver version for grunt
+126 silly cache afterAdd grunt-cli@1.2.0
+127 verbose afterAdd /Users/vramamoorthy/.npm/grunt-cli/1.2.0/package/package.json not in flight; writing
+128 verbose correctMkdir /Users/vramamoorthy/.npm correctMkdir not in flight; initializing
+129 silly cache afterAdd grunt@1.0.1
+130 verbose afterAdd /Users/vramamoorthy/.npm/grunt/1.0.1/package/package.json not in flight; writing
+131 verbose correctMkdir /Users/vramamoorthy/.npm correctMkdir not in flight; initializing
+132 verbose afterAdd /Users/vramamoorthy/.npm/grunt-cli/1.2.0/package/package.json written
+133 verbose afterAdd /Users/vramamoorthy/.npm/grunt/1.0.1/package/package.json written
+134 silly rollbackFailedOptional Starting
+135 silly rollbackFailedOptional Finishing
+136 silly runTopLevelLifecycles Starting
+137 silly runTopLevelLifecycles Finishing
+138 silly install printInstalled
+139 verbose stack Error: No compatible version found: grunt-angular-templates@^1.1.0
+139 verbose stack Valid install targets:
+139 verbose stack 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0, 0.6.0, 0.5.9, 0.5.8, 0.5.7, 0.5.6, 0.5.5, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.10, 0.4.9, 0.4.7, 0.4.6, 0.4.5, 0.4.4, 0.4.3, 0.4.2, 0.4.1, 0.4.0, 0.3.12, 0.3.11, 0.3.10, 0.3.9, 0.3.8, 0.3.7, 0.3.6, 0.3.4, 0.3.3, 0.3.2, 0.3.1, 0.3.0, 0.2.2, 0.2.1, 0.1.3, 0.1.2, 0.1.1, 0.1.0
+139 verbose stack
+139 verbose stack     at pickVersionFromRegistryDocument (/Users/vramamoorthy/.nvm/versions/node/v5.10.1/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+139 verbose stack     at /Users/vramamoorthy/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+139 verbose stack     at /Users/vramamoorthy/.nvm/versions/node/v5.10.1/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+139 verbose stack     at saved (/Users/vramamoorthy/.nvm/versions/node/v5.10.1/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+139 verbose stack     at /Users/vramamoorthy/.nvm/versions/node/v5.10.1/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+139 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+140 verbose cwd /Users/vramamoorthy/xplore/scala/rpn-play-scala
+141 error Darwin 14.5.0
+142 error argv "/Users/vramamoorthy/.nvm/versions/node/v5.10.1/bin/node" "/Users/vramamoorthy/.nvm/versions/node/v5.10.1/bin/npm" "install"
+143 error node v5.10.1
+144 error npm  v3.8.8
+145 error No compatible version found: grunt-angular-templates@^1.1.0
+145 error Valid install targets:
+145 error 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0, 0.6.0, 0.5.9, 0.5.8, 0.5.7, 0.5.6, 0.5.5, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.10, 0.4.9, 0.4.7, 0.4.6, 0.4.5, 0.4.4, 0.4.3, 0.4.2, 0.4.1, 0.4.0, 0.3.12, 0.3.11, 0.3.10, 0.3.9, 0.3.8, 0.3.7, 0.3.6, 0.3.4, 0.3.3, 0.3.2, 0.3.1, 0.3.0, 0.2.2, 0.2.1, 0.1.3, 0.1.2, 0.1.1, 0.1.0
+146 error If you need help, you may report this error at:
+146 error     <https://github.com/npm/npm/issues>
+147 verbose exit [ 1, true ]
