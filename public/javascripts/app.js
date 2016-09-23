@@ -2,7 +2,7 @@ angular.module('components', []);
 
 angular.module('lookUp', ['base64']);
 
-angular.module('osprey', [
+angular.module('rpn-calc', [
     'ngRoute',
     'base64',
     'components',

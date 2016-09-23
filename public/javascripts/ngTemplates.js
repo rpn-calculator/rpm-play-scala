@@ -1,4 +1,4 @@
-angular.module('osprey').run(['$templateCache', function($templateCache) {
+angular.module('rpn-calc').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('app/js/lookUp/lookUp.html',
